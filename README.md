@@ -1,4 +1,5 @@
 # RxBus
+[ ![Download](https://api.bintray.com/packages/bitsecho/maven/rxbus/images/download.svg?version=1.0.0) ](https://bintray.com/bitsecho/maven/rxbus/1.0.0/link)
 
 A Kotlin ReactiveX event trigger with RxJava3
 
@@ -36,6 +37,11 @@ fun main() {
 //print:
 //Alice
 //Bob
+```
+
+## Installation
+```gradle
+implementation 'com.bitsecho.util:then:1.0.2'
 ```
 
 ## License
