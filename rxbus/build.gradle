@@ -26,6 +26,6 @@ publish {
     groupId = 'com.bitsecho.util'
     artifactId = 'rxbus'
     publishVersion = '1.0.0'
-    desc = 'A RetiveX event trigger base on Kotlin and RxJava3'
+    desc = 'A ReactiveX event trigger base on Kotlin and RxJava3'
     website = 'https://github.com/BitsEcho/RxBus'
 }

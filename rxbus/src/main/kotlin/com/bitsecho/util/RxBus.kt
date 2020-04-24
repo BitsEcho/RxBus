@@ -6,9 +6,7 @@ import io.reactivex.rxjava3.processors.PublishProcessor
 open class RxBus<T> {
     private val bus = PublishProcessor.create<T>().toSerialized()
 
-    fun getObservable(): Observable<T> {
-        return bus.toObservable()
-    }
+    val obs: Observable<T> get() = bus.toObservable()
 
     fun post(t: T) {
         if (hasSubscribers()) {
@@ -16,7 +14,5 @@ open class RxBus<T> {
         }
     }
 
-    fun hasSubscribers(): Boolean {
-        return bus.hasSubscribers()
-    }
+    fun hasSubscribers(): Boolean = bus.hasSubscribers()
 }
