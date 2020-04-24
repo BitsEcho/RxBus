@@ -41,7 +41,7 @@ fun main() {
 
 ## Installation
 ```gradle
-implementation 'com.bitsecho.util:then:1.0.2'
+implementation 'com.bitsecho.util:rxbus:1.0.0'
 ```
 
 ## License
