@@ -15,12 +15,12 @@ class Foo {
         // ...some actions before
         bus.post("Alice")   // Trigger the event 1
         bus.post("Bob")     // Trigger the event 2
-        // some action after...
+        // some actions after...
     }
 }
 ```
 
-Subsribe the Observable, and use some Rx Operations: 
+Subscribe the Observable, and use some Rx Operations: 
 
 ```kotlin
 fun main() {
@@ -30,7 +30,7 @@ fun main() {
             println(it)
         }
     foo.bar()
-    Thread.sleep(1000)	// just keep the thread in this sample
+    Thread.sleep(1000)	// Just keep the thread in this sample
     disposable.dispose()    //Dispose the subscribe when do not use the Observable is a good hobby
 }
 
